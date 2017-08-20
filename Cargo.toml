@@ -1,0 +1,21 @@
+[package]
+authors = ["Sam Stelfox <sstelfox@bedroomprogrammers.net>"]
+description = "Peripheral access API for the ATSAMD10D14AS microcontroller"
+documentation = "https://docs.rs/atsamd10d14as"
+keywords = ["no-std", "arm", "cortex-m", "samd10"]
+license = "MIT"
+name = "atsamd10d14as"
+repository = "https://github.com/sstelfox/atsamd10d14as"
+version = "0.5.0"
+
+[dependencies]
+cortex-m = "0.3.1"
+bare-metal = "0.1.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.3.5"
+
+[features]
+rt = ["cortex-m-rt"]
